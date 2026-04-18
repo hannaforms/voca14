@@ -398,6 +398,7 @@ function render(){
   if(mode==='mc')renderMC(w);
   else if(mode==='input')renderInput(w);
   else renderFlash(w);
+  setTimeout(()=>speakWord(w.en,0.85,null),120);
 }
 function esc(s){return s.replace(/\\/g,'\\\\').replace(/'/g,"\\'");}
 
